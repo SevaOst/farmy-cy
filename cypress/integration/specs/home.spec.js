@@ -18,3 +18,5 @@ describe('Zipcode Modal Test', () => {
       cy.contains('Gesamtes Sortiment anzeigen').click({force: true})
     })
  })
+
+ //Egor, hi!
