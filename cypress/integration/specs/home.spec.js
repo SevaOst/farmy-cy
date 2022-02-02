@@ -15,10 +15,6 @@ describe('Zipcode Modal Test', () => {
       cy.contains('FR').click()
       cy.contains('ENG').click()
       cy.contains('DE').click()
-      cy.contains('Gesamtes Sortiment anzeigen').click({force: true})
+      cy.get('[ng-click^="onRegularModeClicked()"]').click()
     })
  })
-
- //Egor, hi!
- //Hello, I'm here
- // hi master
