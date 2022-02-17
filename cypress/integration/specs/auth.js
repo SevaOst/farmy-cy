@@ -1,4 +1,4 @@
-
+describe('Authorization tests', () => {
 
 it.only('Wrong UI auth without data', () => {
   cy.visit("https://www.farmy.ch/")
@@ -21,5 +21,7 @@ it.only('Successful UI auth with data', () => {
   cy.get('button[name="commit"]').click()
 
   cy.get('span[class="text-muted small ng-binding"]').should('be.visible').contains('Grüezi')
+
+})
 
 })
