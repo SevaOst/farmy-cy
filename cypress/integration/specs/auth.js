@@ -1,6 +1,6 @@
 describe('Authorization tests', () => {
 
-it.only('1. Wrong UI auth without data', () => {
+it('Wrong UI auth without data', () => {
   cy.visit("https://www.farmy.ch/")
   cy.get('i[class="fa fa-user"]').click({force: true})
   cy.get('[class="block-title marginbottomgw text-center-xs storefront-text-color"]').should('be.visible').contains('Anmeldung')
@@ -11,7 +11,7 @@ it.only('1. Wrong UI auth without data', () => {
 })
 
 
-it.only('2. Successful UI auth with data', () => {
+it('Successful UI auth with data', () => {
   cy.visit("https://www.farmy.ch/")
   cy.get('i[class="fa fa-user"]').click({force: true})
   cy.get('[class="block-title marginbottomgw text-center-xs storefront-text-color"]').should('be.visible').contains('Anmeldung')
