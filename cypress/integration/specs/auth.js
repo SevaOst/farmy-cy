@@ -58,7 +58,7 @@ it('Wrong UI auth with right email and incorrect password', () => {
     //This behavior is configurable, and you can choose to turn this off by listening to the uncaught:exception event.
     //added exception catcher, since then no fails in this test
 
-it('Successful UI auth with correct data', () => {
+it.only('Successful UI auth with correct data', () => {
   cy.visit("https://www.farmy.ch/")
 
   cy.get('i[class="fa fa-user"]').click({force: true})
